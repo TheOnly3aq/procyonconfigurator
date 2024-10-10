@@ -24,7 +24,7 @@ import InteriorPreview from '../InteriorPreview';
 class App extends React.Component {
   state = {
     currentStep: 0,
-    config: initialConfig?.['ccf'] ?? null
+    config: initialConfig?.['vela'] ?? null
   };
 
   get selectedModel() {

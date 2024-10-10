@@ -1,32 +1,22 @@
 export const colors = [
-  { label: "Arctic", value: "white", price: 0 },
-  { label: "Abyss Ultragloss", value: "black", price: 1500 },
-  { label: "Flora Green  Metallic", value: "floragreen", price: 1000 },
-  { label: "Procyon Sirus Grey", value: "silver", price: 1500 },
-  { label: "Supernova Metallic", value: "supernova", price: 1500 },
-  { label: "Memphis Metallic", value: "memphis", price: 1500 },
-  { label: "Chromosphere Metallic", value: "chromosphere", price: 1500 },
-  { label: "Quicksilver Metallic", value: "quicksilver", price: 1500 },
-  { label: "Deep Space Metallic", value: "blue", price: 1500 },
-  { label: "Ruby Stone Metallic", value: "red", price: 2500 },
-];
-export const eccfcolors = [
-  { label: "Arctic", value: "white", price: 0 },
-  { label: "Abyss Ultragloss", value: "black", price: 1500 },
-  { label: "Procyon Dark Matter", value: "silver", price: 1500 },
-  { label: "Skyline", value: "blue", price: 1500 },
-  { label: "Ruby Stone Metallic", value: "red", price: 2500 },
+  { label: "Cepheus Rose Neo", value: "roseneo", price: 0 },
+  { label: "Mars Haze", value: "marshaze", price: 1500 },
+  { label: "Gamma Crucis Mica", value: "crucismica", price: 1000 },
+  { label: "Andromeda", value: "andromeda", price: 1500 },
+  { label: "Callisto Pearlecent", value: "callisto", price: 1500 },
+  { label: "Neptune Blue Metallic", value: "neptuneblue", price: 1500 },
+  { label: "Dark Matter", value: "darkmatter", price: 1500 },
+  { label: "Sirius Grey", value: "siriusgrey", price: 1500 },
+  { label: "Supernova", value: "supernova", price: 1500 },
+  { label: "Pluto Pearl", value: "plutopearl", price: 2500 },
 ];
 
 export const interiorColors = [
-  { label: "Abyss Black & Cloth", value: "abyssblack", price: 0 },
-  { label: "Dune Beige & Cloth", value: "dune", price: 0 },
-  { label: "Graphite Blue & Suede", value: "graphite", price: 1500 },
-  { label: "Bordeaux Red & Suede", value: "birdeaux", price: 1500 },
-  { label: "Arctic White & Suede", value: "arcticwhite", price: 1500 },
-  { label: "Coffee Brown & Leather", value: "coffeebrown", price: 2000 },
-  { label: "Chocolate Brown & Leather", value: "chocbrown", price: 2000 },
-  { label: "Obsidian & Leather", value: "obsidianblack", price: 2000 },
+  { label: "Dark Matter", value: "darkmatter", price: 0 },
+  { label: "Dark Matter with Indi Brown Accents", value: "darkmatter_indibrown", price: 1000 },
+  { label: "Magellanic Blue", value: "magellanicblue", price: 1500 },
+  { label: "Orion Ruby", value: "orionruby", price: 1500 },
+  { label: "Venusian Beige", value: "venusianbeige", price: 1500 },
 ];
 
 export const interiorLayouts = [
@@ -35,107 +25,34 @@ export const interiorLayouts = [
   { label: "Seven seat interior", value: "seven_seat", price: 3500 },
 ];
 
-
-
-
 export const models = [
   {
-    key: "ccf",
-    name: "CCF2",
+    key: "vela",
+    name: "Vela",
     colors: colors,
     wheels: [
       {
-        src: `${process.env.PUBLIC_URL}/wheels/model_ccf/model_ccf_wheel_1.png`,
-        label: "Procyon BA Wheels",
+        src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_wheel_1.png`,
+        label: "α Vela Wheels",
         value: "wheel_1",
         price: 0,
       },
       {
-        src: `${process.env.PUBLIC_URL}/wheels/model_ccf/model_ccf_wheel_2.png`,
-        label: "Procyon DC Wheels",
+        src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_wheel_2.png`,
+        label: "β Vela Wheels",
         value: "wheel_2",
         price: 4500,
       },
-      {
-        src: `${process.env.PUBLIC_URL}/wheels/model_ccf/model_ccf_wheel_3.png`,
-        label: "Procyon AA Wheels",
-        value: "wheel_3",
-        price: 5000,
-      },
+      // {
+      //   src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_wheel_3.png`,
+      //   label: "γ Vela Wheels",
+      //   value: "wheel_3",
+      //   price: 5000,
+      // },
     ],
-    wheelsize: [
-        {
-          src: `${process.env.PUBLIC_URL}/wheels/model_ccf/model_ccf_wheel_15.png`,
-          label: '15" rims',
-          value: "15",
-          price: 0,
-        },
-        {
-          src: `${process.env.PUBLIC_URL}/wheels/model_ccf/model_ccf_wheel_16.png`,
-          label: '16" rims',
-          value: "16",
-          price: 400,
-        },
-        {
-          src: `${process.env.PUBLIC_URL}/wheels/model_ccf/model_ccf_wheel_17.png`,
-          label: '17" rims',
-          value: "17",
-          price: 600,
-        },
-      ],
     types: [
       {
-        label: "F4 6 Speed MT",
-        value: "f4MT",
-        specs: {
-          power: 192,
-          top_speed: 209,
-          acceleration_time: 6.4,
-        },
-        price: 31240,
-        benefits: [
-          "Advanced Driver Assistance System",
-          "Sport Mode",
-          "Selecta Sport Plus 2R Tires",
-          "Keyless Entry  & Keyless Start",
-        ],
-      },
-      {
-        label: "F4 6 Speed DCT",
-        value: "f4DCT",
-        specs: {
-          power: 192,
-          top_speed: 209,
-          acceleration_time: 5.8,
-        },
-        price: 39520,
-        benefits: [
-          "Advanced Driver Assistance System",
-          "Sport Mode",
-          "Selecta Sport Plus 2R Tires",
-          "Keyless Entry  & Keyless Start",
-          "Smooth 6 Speed Dual Clutch Transmission",
-          "Quicker acceleration",
-        ],
-      },
-      {
-        label: "F6 6 Speed MT",
-        value: "F6MT",
-        specs: {
-          power: 243,
-          top_speed: 270,
-          acceleration_time: 5.4,
-        },
-        price: 42390,
-        benefits: [
-          "Advanced Driver Assistance System",
-          "Sport Mode",
-          "Selecta Sport Plus 2R Tires",
-          "Keyless Entry  & Keyless Start",
-        ],
-      },
-      {
-        label: "F6 6 Speed DCT",
+        label: "F6 7 Speed DCT",
         value: "F6DCT",
         specs: {
           power: 243,
@@ -156,77 +73,40 @@ export const models = [
     interiorColors: interiorColors,
   },
   {
-    key: "eccf",
-    name: "eCCF",
-    colors: eccfcolors,
+    key: "velarf",
+    name: "Vela Retractable Fastback",
+    colors: colors,
     wheels: [
       {
-        src: `${process.env.PUBLIC_URL}/wheels/model_ccf/model_eccf_wheel_1.png`,
-        label: "Procyon EA Wheels",
+        src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_wheel_1.png`,
+        label: "α Vela Wheels",
         value: "wheel_1",
         price: 0,
       },
       {
-        src: `${process.env.PUBLIC_URL}/wheels/model_ccf/model_eccf_wheel_2.png`,
-        label: "Procyon DA Wheels",
+        src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_wheel_2.png`,
+        label: "β Vela Wheels",
         value: "wheel_2",
-        price: 5500,
+        price: 4500,
       },
     ],
-    wheelsize: [
-        {
-          src: `${process.env.PUBLIC_URL}/wheels/model_ccf/model_ccf_wheel_15.png`,
-          label: '15" rims',
-          value: "15",
-          price: 0,
-        },
-        {
-          src: `${process.env.PUBLIC_URL}/wheels/model_ccf/model_ccf_wheel_16.png`,
-          label: '16" rims',
-          value: "16",
-          price: 400,
-        },
-        {
-          src: `${process.env.PUBLIC_URL}/wheels/model_ccf/model_ccf_wheel_17.png`,
-          label: '17" rims',
-          value: "17",
-          price: 600,
-        },
-      ],
     types: [
       {
-        label: "Base Motor",
-        value: "Base",
+        label: "F6 7 Speed DCT",
+        value: "F6DCT",
         specs: {
-          power: 202,
-          top_speed: 168,
-          acceleration_time: 5.9,
+          power: 243,
+          top_speed: 270,
+          acceleration_time: 5.2,
         },
-        price: 37280,
-        benefits: [
-          "Advanced Driver Assistance System",
-          "Sport Mode",
-          "Selecta Sport Plus 2R Tires",
-          "Keyless Entry  & Keyless Start",
-          "Quiet and smooth acceleration",
-        ],
-      },
-      {
-        label: "Performance Motor",
-        value: "Performance",
-        specs: {
-          power: 278,
-          top_speed: 195,
-          acceleration_time: 4.1,
-        },
-        price: 42930,
+        price: 51870,
         benefits: [
           "Advanced Driver Assistance System",
           "Sport Mode",
           "Selecta Sport Plus 2R Tires",
           "Keyless Entry  & Keyless Start",
           "Smooth 6 Speed Dual Clutch Transmission",
-          "Quiet and smooth acceleration",
+          "Quicker acceleration",
         ],
       },
     ],
@@ -235,21 +115,22 @@ export const models = [
 ];
 
 export const initialConfig = {
-  ccf: {
-    car_type: "f4MT",
-    model: "ccf",
-    color: "white",
+  vela: {
+    car_type: "F6DCT",
+    model: "vela",
+    modelName: "Vela",
+    color: "roseneo",
     wheelsize: "16",
     wheels: "wheel_1",
-    interior_color: "abyssblack",
+    interior_color: "darkmatter",
   },
-  eccf: {
-    car_type: "Base",
-    model: "eccf",
-    color: "white",
+  velarf: {
+    car_type: "F6DCT",
+    model: "velarf",
+    modelName: "Vela RF",
+    color: "roseneo",
     wheelsize: "16",
     wheels: "wheel_1",
-    interior_color: "arcticwhite",
+    interior_color: "darkmatter",
   },
-
 };

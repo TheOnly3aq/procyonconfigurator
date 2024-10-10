@@ -21,12 +21,12 @@
   font-size: 14px;
   /* font-family: "Nasalization"; */
   /* text-transform: capitalize; */
-  transition: all .25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 .text-option > span:first-child {
   overflow: hidden;
   white-space: nowrap;
-    font-family: "Nasalization";
+  font-family: "Nasalization";
 
   text-overflow: ellipsis;
 }
@@ -43,7 +43,7 @@
   margin-right: 12px;
   margin-bottom: 12px;
   border-radius: 12px;
-  background: var(--theme-surface);;
+  background: var(--theme-surface);
   border: 2px solid var(--theme-surface-border);
   box-sizing: border-box;
   display: flex;
@@ -79,78 +79,38 @@
   border: 2px solid var(--theme-border);
   box-sizing: border-box;
 }
-.color-option > div.white {
-  background: white;
+.color-option > div.roseneo {
+  background: linear-gradient(to bottom right, #7d6865 0%, #5e3733 100%);
 }
-.color-option > div.black {
-  background: linear-gradient(
-    to bottom right,
-    hsl(0, 0%, 30%) 0%,
-    hsl(0, 0%, 0%) 100%
-  );
+.color-option > div.marshaze {
+  background: linear-gradient(to bottom right, #b96655 0%, #b96655 100%);
 }
-.color-option > div.floragreen {
-  background: linear-gradient(
-    to bottom right,
-    hsl(162, 85%, 29%) 0%, 
-    hsl(162, 85%, 29%) 85%,  
-    hsl(0, 0%, 100%) 100%     
-  );
+.color-option > div.crucismica {
+  background: linear-gradient(to bottom right, #ea7571 0%, #f30800 100%);
 }
-
-
-.color-option > div.silver {
-  background: linear-gradient(
-    to bottom right,
-    hsl(209, 11%, 55%) 0%,
-    hsl(210, 11%, 28%) 100%
-  );
+.color-option > div.andromeda {
+  background: linear-gradient(to bottom right, #d9a26e 0%, #fe7b00 100%);
 }
-.color-option > div.quicksilver {
-  background: linear-gradient(
-    to bottom right,
-    hsl(39, 40%, 82%) 0%,
-    hsl(30, 12%, 71%) 100%
-  );
+.color-option > div.callisto {
+  background: linear-gradient(to bottom right, #c8cbcd 0%, #467fa2 100%);
 }
-.color-option > div.blue {
-  background: linear-gradient(
-    to bottom right,
-    hsl(223, 100%, 60%) 0%,
-    hsl(222.86, 100%, 32.94%) 100%
-  );
-}
-.color-option > div.red {
-  background: linear-gradient(
-    to bottom right,
-    hsl(0, 100%, 73%) 0%,
-    hsl(0, 82.35%, 40%) 100%
-  );
+.color-option > div.neptuneblue {
+  background: linear-gradient(to bottom right, #7ebdd7 0%, #21afe7 100%);
 }
 
-.color-option > div.memphis {
-  background: linear-gradient(
-    to bottom right,
-    hsl(0, 81%, 45%) 0%,
-    hsl(0, 100%, 22%) 100%
-  );
+.color-option > div.darkmatter {
+  background: linear-gradient(to bottom right, #707174 0%, #262728 100%);
 }
-
+.color-option > div.siriusgrey {
+  background: linear-gradient(to bottom right, #8f8f91 0%, #5a5a5b 100%);
+}
 .color-option > div.supernova {
-  background: linear-gradient(
-    to bottom right,
-    hsl(0, 0%, 74%) 0%,
-    hsl(0, 0%, 48%) 100%
-  );
+  background: linear-gradient(to bottom right, #f4f7f7 0%, #9fa0a0 100%);
 }
-.color-option > div.chromosphere {
-  background: linear-gradient(
-    to bottom right,
-    hsl(23, 77%, 65%) 0%,
-     hsl(23, 82%, 51%) 100%
-  );
+.color-option > div.plutopearl {
+  background: linear-gradient(to bottom right, #ffffff 0%, #e2e2e3 100%);
 }
-@media(min-width: 576px) {
+@media (min-width: 576px) {
   .color-option {
     width: 65px;
     height: 65px;
@@ -160,7 +120,7 @@
     height: 100px;
   }
 }
-@media(min-width: 992px) {
+@media (min-width: 992px) {
   .text-option {
     max-width: 300px;
   }
