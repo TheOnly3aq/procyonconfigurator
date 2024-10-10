@@ -1,5 +1,13 @@
 # Procyon Car Configurator 
-![Preview image](/public/hirochi_banner.png)
+![Preview image](/public/procyon_banner.png)
 
 # Description 📝
-Welcome to the repository of the Procyon CCF and eCCF car configurator. 
+Welcome to the repository of the Procyon Vela car configurator. 
+
+
+# ToDo 📋
+
+- Change prices to be realistic
+- Add color options to the wheels
+- Add 220 and 270 versions seperatly
+- Add the first and sunstorm edition (maybe)
