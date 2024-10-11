@@ -59,7 +59,7 @@ export const models = [
       //   price: 5000,
       // },
     ],
-    wheelColor: [
+    wheelcolor: [
       {
         src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_color_1.png`,
         label: "Diamond Cut Rim Color",
@@ -90,14 +90,15 @@ export const models = [
         label: "S220 F6",
         value: "S220",
         specs: {
-          power: 243,
-          top_speed: 270,
-          acceleration_time: 5.2,
+          power: 236,
+          top_speed: 1,
+          acceleration_time: 4.8,
         },
         price: 51870,
         benefits: [
           "Advanced Driver Assistance System",
           "7 Speed DCT",
+          "Premium sound system",
           "Selecta Sport Plus 2R Tires",
           "Keyless Entry  & Keyless Start",
           "Smooth 7 Speed Dual Clutch Transmission",
@@ -107,18 +108,20 @@ export const models = [
         label: "S270 F6",
         value: "S270",
         specs: {
-          power: 243,
-          top_speed: 270,
-          acceleration_time: 5.2,
+          power: 270,
+          top_speed: 1,
+          acceleration_time: 4.7,
         },
         price: 55230,
         benefits: [
           "Advanced Driver Assistance System",
           "7 Speed DCT",
+          "Premium sound system",
           "Selecta Sport Plus 2R Tires",
           "Keyless Entry  & Keyless Start",
           "Smooth 7 Speed Dual Clutch Transmission",
           "Quicker acceleration",
+          "Higher top speed",
         ],
       },
     ],
@@ -142,7 +145,7 @@ export const models = [
         price: 4500,
       },
     ],
-    wheelColor: [
+    wheelcolor: [
       {
         src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_color_1.png`,
         label: "Diamond Cut Rim Color",
@@ -173,14 +176,15 @@ export const models = [
         label: "S220 F6",
         value: "S220",
         specs: {
-          power: 243,
-          top_speed: 270,
-          acceleration_time: 5.2,
+          power: 236,
+          top_speed: 1,
+          acceleration_time: 4.8,
         },
         price: 51870,
         benefits: [
           "Advanced Driver Assistance System",
           "7 Speed DCT",
+          "Premium sound system",
           "Selecta Sport Plus 2R Tires",
           "Keyless Entry  & Keyless Start",
           "Smooth 7 Speed Dual Clutch Transmission",
@@ -190,18 +194,20 @@ export const models = [
         label: "S270 F6",
         value: "S270",
         specs: {
-          power: 243,
-          top_speed: 270,
-          acceleration_time: 5.2,
+          power: 270,
+          top_speed: 1,
+          acceleration_time: 4.8,
         },
         price: 55230,
         benefits: [
           "Advanced Driver Assistance System",
           "7 Speed DCT",
+          "Premium sound system",
           "Selecta Sport Plus 2R Tires",
           "Keyless Entry  & Keyless Start",
           "Smooth 7 Speed Dual Clutch Transmission",
           "Quicker acceleration",
+          "Higher top speed",
         ],
       },
     ],
@@ -219,7 +225,7 @@ export const models = [
         price: 0,
       },
     ],
-    wheelColor: [
+    wheelcolor: [
       {
         src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_color_1.png`,
         label: "Diamond Cut Rim Color",
@@ -250,18 +256,20 @@ export const models = [
         label: "S270 F6 First Edition",
         value: "S270",
         specs: {
-          power: 243,
-          top_speed: 270,
-          acceleration_time: 5.2,
+          power: 286,
+          top_speed: 1,
+          acceleration_time: 4.8,
         },
         price: 59730,
         benefits: [
           "Advanced Driver Assistance System",
           "7 Speed DCT",
+          "Premium sound system",
           "Selecta Sport Plus 2R Tires",
           "Keyless Entry  & Keyless Start",
           "Smooth 7 Speed Dual Clutch Transmission",
           "Quicker acceleration",
+          "Higher top speed",
         ],
       },
     ],
@@ -277,7 +285,7 @@ export const initialConfig = {
     color: "roseneo",
     wheelsize: "16",
     wheels: "wheel_1",
-    wheelColor: "color_1",
+    wheelcolor: "color_1",
     interior_color: "darkmatter",
   },
   velarf: {
@@ -287,7 +295,7 @@ export const initialConfig = {
     color: "roseneo",
     wheelsize: "16",
     wheels: "wheel_1",
-    wheelColor: "color_1",
+    wheelcolor: "color_1",
     interior_color: "darkmatter",
   },
   velafe: {
@@ -296,7 +304,7 @@ export const initialConfig = {
     modelName: "Vela First Editon",
     color: "plutopearl",
     wheelsize: "17",
-    wheelColor: "color_1",
+    wheelcolor: "color_1",
     wheels: "wheel_3",
     interior_color: "lunarsurface_europastone",
   },

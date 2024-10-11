@@ -77,7 +77,7 @@ class App extends React.Component {
             label: "Select wheel color (preview coming soon)",
             type: "image",
             prop: "wheelcolor",
-            options: this.selectedModel?.wheelColor?? [],
+            options: this.selectedModel?.wheelcolor?? [],
           },
           {
             label: "Select wheel size",

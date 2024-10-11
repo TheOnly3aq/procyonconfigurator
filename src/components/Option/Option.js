@@ -43,10 +43,6 @@ const Option = ({
       case "color":
         return (
           <div className={value} title={label}>
-            <img
-              src="${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_wheel_1.png"
-              alt=""
-            />
           </div>
         );
       default:
