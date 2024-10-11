@@ -41,7 +41,14 @@ const Option = ({
       case "image":
         return <img src={src} alt={label} title={label} />;
       case "color":
-        return <div className={value} title={label} />;
+        return (
+          <div className={value} title={label}>
+            <img
+              src="${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_wheel_1.png"
+              alt=""
+            />
+          </div>
+        );
       default:
         return null;
     }

@@ -10,6 +10,11 @@ export const colors = [
   { label: "Supernova", value: "supernova", price: 1500 },
   { label: "Pluto Pearl", value: "plutopearl", price: 2500 },
 ];
+export const colorsfirstedition = [
+  { label: "Pluto Pearl", value: "plutopearl", price: 0 },
+  { label: "Andromeda", value: "andromeda", price: 1500 },
+  { label: "Dark Matter", value: "darkmatter", price: 1500 },
+];
 
 export const interiorColors = [
   { label: "Dark Matter", value: "darkmatter", price: 0 },
@@ -17,6 +22,10 @@ export const interiorColors = [
   { label: "Magellanic Blue", value: "magellanicblue", price: 1500 },
   { label: "Orion Ruby", value: "orionruby", price: 1500 },
   { label: "Venusian Beige", value: "venusianbeige", price: 1500 },
+];
+
+export const interiorColorsFirst = [
+  { label: "Lunar Surface Europastone", value: "lunarsurface_europastone", price: 0 },
 ];
 
 export const interiorLayouts = [
@@ -50,10 +59,36 @@ export const models = [
       //   price: 5000,
       // },
     ],
+    wheelColor: [
+      {
+        src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_color_1.png`,
+        label: "Diamond Cut Rim Color",
+        value: "color_1",
+        price: 0,
+      },
+      {
+        src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_color_2.png`,
+        label: "Silver Wheel Rim Color",
+        value: "color_2",
+        price: 0,
+      },
+      {
+        src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_color_3.png`,
+        label: "Satin Black Rim Color",
+        value: "color_3",
+        price: 0,
+      },
+      {
+        src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_color_4.png`,
+        label: "Satin Gold Rim Color",
+        value: "color_4",
+        price: 0,
+      },
+    ],
     types: [
       {
-        label: "F6 7 Speed DCT",
-        value: "F6DCT",
+        label: "S220 F6",
+        value: "S220",
         specs: {
           power: 243,
           top_speed: 270,
@@ -62,10 +97,27 @@ export const models = [
         price: 51870,
         benefits: [
           "Advanced Driver Assistance System",
-          "Sport Mode",
+          "7 Speed DCT",
           "Selecta Sport Plus 2R Tires",
           "Keyless Entry  & Keyless Start",
-          "Smooth 6 Speed Dual Clutch Transmission",
+          "Smooth 7 Speed Dual Clutch Transmission",
+        ],
+      },
+      {
+        label: "S270 F6",
+        value: "S270",
+        specs: {
+          power: 243,
+          top_speed: 270,
+          acceleration_time: 5.2,
+        },
+        price: 55230,
+        benefits: [
+          "Advanced Driver Assistance System",
+          "7 Speed DCT",
+          "Selecta Sport Plus 2R Tires",
+          "Keyless Entry  & Keyless Start",
+          "Smooth 7 Speed Dual Clutch Transmission",
           "Quicker acceleration",
         ],
       },
@@ -90,10 +142,36 @@ export const models = [
         price: 4500,
       },
     ],
+    wheelColor: [
+      {
+        src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_color_1.png`,
+        label: "Diamond Cut Rim Color",
+        value: "color_1",
+        price: 0,
+      },
+      {
+        src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_color_2.png`,
+        label: "Silver Wheel Rim Color",
+        value: "color_2",
+        price: 0,
+      },
+      {
+        src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_color_3.png`,
+        label: "Satin Black Rim Color",
+        value: "color_3",
+        price: 0,
+      },
+      {
+        src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_color_4.png`,
+        label: "Satin Gold Rim Color",
+        value: "color_4",
+        price: 0,
+      },
+    ],
     types: [
       {
-        label: "F6 7 Speed DCT",
-        value: "F6DCT",
+        label: "S220 F6",
+        value: "S220",
         specs: {
           power: 243,
           top_speed: 270,
@@ -102,35 +180,124 @@ export const models = [
         price: 51870,
         benefits: [
           "Advanced Driver Assistance System",
-          "Sport Mode",
+          "7 Speed DCT",
           "Selecta Sport Plus 2R Tires",
           "Keyless Entry  & Keyless Start",
-          "Smooth 6 Speed Dual Clutch Transmission",
+          "Smooth 7 Speed Dual Clutch Transmission",
+        ],
+      },
+      {
+        label: "S270 F6",
+        value: "S270",
+        specs: {
+          power: 243,
+          top_speed: 270,
+          acceleration_time: 5.2,
+        },
+        price: 55230,
+        benefits: [
+          "Advanced Driver Assistance System",
+          "7 Speed DCT",
+          "Selecta Sport Plus 2R Tires",
+          "Keyless Entry  & Keyless Start",
+          "Smooth 7 Speed Dual Clutch Transmission",
           "Quicker acceleration",
         ],
       },
     ],
     interiorColors: interiorColors,
   },
+  {
+    key: "velafe",
+    name: "Vela First Edition",
+    colors: colorsfirstedition,
+    wheels: [
+      {
+        src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_wheel_3.png`,
+        label: "γ Vela First Edition Wheels",
+        value: "wheel_3",
+        price: 0,
+      },
+    ],
+    wheelColor: [
+      {
+        src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_color_1.png`,
+        label: "Diamond Cut Rim Color",
+        value: "color_1",
+        price: 0,
+      },
+      {
+        src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_color_2.png`,
+        label: "Silver Wheel Rim Color",
+        value: "color_2",
+        price: 0,
+      },
+      {
+        src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_color_3.png`,
+        label: "Satin Black Rim Color",
+        value: "color_3",
+        price: 0,
+      },
+      {
+        src: `${process.env.PUBLIC_URL}/wheels/model_vela/model_vela_color_4.png`,
+        label: "Satin Gold Rim Color",
+        value: "color_4",
+        price: 0,
+      },
+    ],
+    types: [
+      {
+        label: "S270 F6 First Edition",
+        value: "S270",
+        specs: {
+          power: 243,
+          top_speed: 270,
+          acceleration_time: 5.2,
+        },
+        price: 59730,
+        benefits: [
+          "Advanced Driver Assistance System",
+          "7 Speed DCT",
+          "Selecta Sport Plus 2R Tires",
+          "Keyless Entry  & Keyless Start",
+          "Smooth 7 Speed Dual Clutch Transmission",
+          "Quicker acceleration",
+        ],
+      },
+    ],
+    interiorColors: interiorColorsFirst,
+  },
 ];
 
 export const initialConfig = {
   vela: {
-    car_type: "F6DCT",
+    car_type: "S220",
     model: "vela",
     modelName: "Vela",
     color: "roseneo",
     wheelsize: "16",
     wheels: "wheel_1",
+    wheelColor: "color_1",
     interior_color: "darkmatter",
   },
   velarf: {
-    car_type: "F6DCT",
+    car_type: "S220",
     model: "velarf",
     modelName: "Vela RF",
     color: "roseneo",
     wheelsize: "16",
     wheels: "wheel_1",
+    wheelColor: "color_1",
     interior_color: "darkmatter",
+  },
+  velafe: {
+    car_type: "S270",
+    model: "velafe",
+    modelName: "Vela First Editon",
+    color: "plutopearl",
+    wheelsize: "17",
+    wheelColor: "color_1",
+    wheels: "wheel_3",
+    interior_color: "lunarsurface_europastone",
   },
 };

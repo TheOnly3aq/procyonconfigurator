@@ -21,6 +21,7 @@ const Summary = ({
   const selectedType = selectedModel?.types?.find(type => type.value === config?.car_type);
   const selectedColor = selectedModel?.colors?.find(color => color.value === config?.color);
   const selectedWheels = selectedModel?.wheels?.find(wheels => wheels.value === config?.wheels);
+  const selectedWheelColor = selectedModel?.wheelColor?.find(wheelColor => wheelColor.value === config?.wheelColor);
   const selectedWheelsize = selectedModel?.wheelsize?.find(wheelsize => wheelsize.value === config?.wheelsize);
   const selectedInteriorColor = selectedModel?.interiorColors?.find(interiorColor => interiorColor.value === config?.interior_color);
   const selectedInteriorLayout = selectedModel?.interiorLayouts?.find(interiorLayout => interiorLayout.value === config?.interior_layout);
@@ -33,7 +34,9 @@ const Summary = ({
         <p>Summary</p>
         <ul>
           <li>
-            <span>{selectedModel?.name} {selectedType?.label}</span>
+            <span>
+              {selectedModel?.name} {selectedType?.label}
+            </span>
             <span>{formatPrice(selectedType?.price)}</span>
           </li>
           <li>
@@ -43,6 +46,10 @@ const Summary = ({
           <li>
             <span>{selectedWheels?.label}</span>
             <span>{formatPrice(selectedWheels?.price)}</span>
+          </li>
+          <li>
+            <span>{selectedWheelColor?.label}</span>
+            <span>{formatPrice(selectedWheelColor?.price)}</span>
           </li>
           <li>
             <span>{selectedWheelsize?.label}</span>

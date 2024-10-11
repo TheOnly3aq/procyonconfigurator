@@ -53,8 +53,8 @@ class App extends React.Component {
             prop: "car_type",
             options: this.selectedModel?.types ?? [],
             disclaimer_1:
-              "All CCF and eCCF models are equipped with all modern safety features, a premium sound system and a detailed interior design.",
-            disclaimer_2: "7 year warranty included in all models.",
+              "All Vela modela are equipped with Driver Assitance features, all modern safety features and more. For more information about a testdrive please contact a local Procyon dealer.",
+            disclaimer_2: "7 year warranty included in all Vela models.",
           },
         ],
       },
@@ -72,6 +72,12 @@ class App extends React.Component {
             type: "image",
             prop: "wheels",
             options: this.selectedModel?.wheels ?? [],
+          },
+          {
+            label: "Select wheel color (preview coming soon)",
+            type: "image",
+            prop: "wheelcolor",
+            options: this.selectedModel?.wheelColor?? [],
           },
           {
             label: "Select wheel size",
