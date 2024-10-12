@@ -91,8 +91,8 @@ export const models = [
         value: "S220",
         specs: {
           power: 236,
-          top_speed: 1,
-          acceleration_time: 4.8,
+          top_speed: 209,
+          acceleration_time: 5.4,
         },
         price: 51870,
         benefits: [
@@ -109,8 +109,8 @@ export const models = [
         value: "S270",
         specs: {
           power: 270,
-          top_speed: 1,
-          acceleration_time: 4.7,
+          top_speed: 279,
+          acceleration_time: 4.9,
         },
         price: 55230,
         benefits: [
@@ -177,8 +177,8 @@ export const models = [
         value: "S220",
         specs: {
           power: 236,
-          top_speed: 1,
-          acceleration_time: 4.8,
+          top_speed: 209,
+          acceleration_time: 5.0,
         },
         price: 51870,
         benefits: [
@@ -195,8 +195,8 @@ export const models = [
         value: "S270",
         specs: {
           power: 270,
-          top_speed: 1,
-          acceleration_time: 4.8,
+          top_speed: 283,
+          acceleration_time: 5.0,
         },
         price: 55230,
         benefits: [
@@ -206,7 +206,6 @@ export const models = [
           "Selecta Sport Plus 2R Tires",
           "Keyless Entry  & Keyless Start",
           "Smooth 7 Speed Dual Clutch Transmission",
-          "Quicker acceleration",
           "Higher top speed",
         ],
       },
@@ -215,7 +214,7 @@ export const models = [
   },
   {
     key: "velafe",
-    name: "Vela First Edition",
+    name: "Vela First Edition (Photos WIP)",
     colors: colorsfirstedition,
     wheels: [
       {
@@ -256,9 +255,9 @@ export const models = [
         label: "S270 F6 First Edition",
         value: "S270",
         specs: {
-          power: 286,
-          top_speed: 1,
-          acceleration_time: 4.8,
+          power: 270,
+          top_speed: 283,
+          acceleration_time: 5.0,
         },
         price: 59730,
         benefits: [
@@ -268,7 +267,6 @@ export const models = [
           "Selecta Sport Plus 2R Tires",
           "Keyless Entry  & Keyless Start",
           "Smooth 7 Speed Dual Clutch Transmission",
-          "Quicker acceleration",
           "Higher top speed",
         ],
       },
