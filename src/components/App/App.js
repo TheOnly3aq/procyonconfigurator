@@ -9,29 +9,28 @@ import Settings from '../Settings';
 import Summary from '../Summary';
 import Preview from '../Preview';
 import InteriorPreview from '../InteriorPreview';
+import { Analytics } from "@vercel/analytics/react";
 
 /*
  * TODO: Refactor App as a functional component
  *
  * Requirements:
- * - Compute total price using React hooks only when config or selectedModel change 
+ * - Compute total price using React hooks only when config or selectedModel change
  * - Create a custom hook to use localStorage to store the current step and config
  * - Switch from setState to the useLocalStorage hook
  * - Use function closures instead of this for callbacks and event handlers
  * - App logic and behavior should remain the same
- * 
- */ 
+ *
+ */
 class App extends React.Component {
   state = {
     currentStep: 0,
-    config: initialConfig?.['vela'] ?? null
+    config: initialConfig?.["vela"] ?? null,
   };
 
   get selectedModel() {
-    return models.find(model =>
-      model?.key === this.state.config?.model
-    );
-  };
+    return models.find((model) => model?.key === this.state.config?.model);
+  }
 
   get steps() {
     return [
@@ -77,7 +76,7 @@ class App extends React.Component {
             label: "Select wheel color (preview coming soon)",
             type: "image",
             prop: "wheelcolor",
-            options: this.selectedModel?.wheelcolor?? [],
+            options: this.selectedModel?.wheelcolor ?? [],
           },
           {
             label: "Select wheel size",
@@ -108,49 +107,65 @@ class App extends React.Component {
         name: "summary",
       },
     ];
-  };
+  }
 
   get totalPrice() {
-    const basePrice = this.selectedModel?.types?.find(
-      type => type.value === this.state.config?.car_type
-    )?.price ?? 0;
-    const colorPrice = this.selectedModel?.colors?.find(
-      color => color.value === this.state.config?.color
-    )?.price ?? 0;
-    const wheelsPrice = this.selectedModel?.wheels?.find(
-      wheels => wheels.value === this.state.config?.wheels
-    )?.price ?? 0;
-    const wheelsizePrice = this.selectedModel?.wheelsize?.find(
-        wheelsize => wheelsize.value === this.state.config?.wheelsize
+    const basePrice =
+      this.selectedModel?.types?.find(
+        (type) => type.value === this.state.config?.car_type
       )?.price ?? 0;
-    const interiorColorPrice = this.selectedModel?.interiorColors?.find(
-      interiorColor => interiorColor.value === this.state.config?.interior_color
-    )?.price ?? 0;
-    const interiorLayoutPrice = this.selectedModel?.interiorLayouts?.find(
-      interiorLayout => interiorLayout.value === this.state.config?.interior_layout
-    )?.price ?? 0;
+    const colorPrice =
+      this.selectedModel?.colors?.find(
+        (color) => color.value === this.state.config?.color
+      )?.price ?? 0;
+    const wheelsPrice =
+      this.selectedModel?.wheels?.find(
+        (wheels) => wheels.value === this.state.config?.wheels
+      )?.price ?? 0;
+    const wheelsizePrice =
+      this.selectedModel?.wheelsize?.find(
+        (wheelsize) => wheelsize.value === this.state.config?.wheelsize
+      )?.price ?? 0;
+    const interiorColorPrice =
+      this.selectedModel?.interiorColors?.find(
+        (interiorColor) =>
+          interiorColor.value === this.state.config?.interior_color
+      )?.price ?? 0;
+    const interiorLayoutPrice =
+      this.selectedModel?.interiorLayouts?.find(
+        (interiorLayout) =>
+          interiorLayout.value === this.state.config?.interior_layout
+      )?.price ?? 0;
 
-    return basePrice + colorPrice + wheelsPrice + interiorColorPrice + interiorLayoutPrice;
-  };
+    return (
+      basePrice +
+      colorPrice +
+      wheelsPrice +
+      interiorColorPrice +
+      interiorLayoutPrice
+    );
+  }
 
   goToStep = (step) => {
     this.setState({ currentStep: step });
   };
 
   goToPrevStep = () => {
-    this.setState(prevState => {
-      const newStep = prevState.currentStep > 0
-        ? prevState.currentStep-1
-        : prevState.currentStep;
+    this.setState((prevState) => {
+      const newStep =
+        prevState.currentStep > 0
+          ? prevState.currentStep - 1
+          : prevState.currentStep;
       return { currentStep: newStep };
     });
   };
 
   goToNextStep = () => {
-    this.setState(prevState => {
-      const newStep = prevState.currentStep < this.steps.length - 1
-        ? prevState.currentStep+1
-        : prevState.currentStep;
+    this.setState((prevState) => {
+      const newStep =
+        prevState.currentStep < this.steps.length - 1
+          ? prevState.currentStep + 1
+          : prevState.currentStep;
       return { currentStep: newStep };
     });
   };
@@ -162,13 +177,12 @@ class App extends React.Component {
   handleOnSelectOption = (prop, value) => {
     if (prop === "model") {
       this.handleChangeModel(value);
-    }
-    else {
-      this.setState(prevState => ({
+    } else {
+      this.setState((prevState) => ({
         config: {
           ...prevState.config,
-          [prop]: value
-        }
+          [prop]: value,
+        },
       }));
     }
   };
@@ -179,6 +193,8 @@ class App extends React.Component {
 
     return (
       <div className="app">
+        <Analytics />
+
         <Menu
           items={this.steps.map((step) => step.name)}
           selectedItem={this.state.currentStep}
@@ -225,7 +241,7 @@ class App extends React.Component {
         />
       </div>
     );
-  };
+  }
 };
 
 export default App;
